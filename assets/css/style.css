@@ -26,6 +26,7 @@ body {
     --ds-bgsecondarycard: #ffc0cb;
     --ds-bgroweven: #d3d3d3;
     --ds-bgbigcard: #228b22;
+    --ds-bgbotton: #8ea1e1;
     /* COLOR FOOTER */
     --ds-bgfooter: #23272a;
     --ds-bgprimarysection: #f08080;
@@ -132,14 +133,6 @@ body {
 }
 
 /* RIGHE E COLONNE */
-.row-1 {
-    height: 50vh;
-}
-
-.row-2 {
-    height: 100vh;
-}
-
 .col-8 {
     width: 66.7vw;
 }
@@ -161,6 +154,10 @@ img{
 h2 {
     font-size: 1.8rem;
     margin-bottom: 2rem;
+}
+
+h4, li{
+    margin-bottom: 0.75rem;
 }
 
 h3 {
@@ -199,13 +196,17 @@ button {
 }
 
 #download {
-    background-color: white;
-    
+    background-color: white;  
 }
 
 #browser {
     color: white;
     background-color: var(--ds-bgfooter)
+}
+
+#last-main-botton {
+    color: white;
+    background-color: var(--ds-bgbotton);
 }
 
 /* MAIN */
@@ -214,11 +215,6 @@ section:nth-child(even) {
 }
 
 /* FOOTER */
-.row-footer-1 {
-    height: 46vh;
-    border-bottom: 1px solid #d3d3d3;
-}
-
 .row-footer-2 {
     height: 14vh;
 }
@@ -247,7 +243,7 @@ a:hover {
 }
 
 .bar-nav{
-    height: 8vh;
+    padding: 0.5rem;
 }
 
 nav {
@@ -297,35 +293,69 @@ h1 {
     background-repeat: no-repeat;
 }
 
+.bottone-main {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
 /* #endregion main */
 
 /* #region footer */
-
 footer {
-    height: 60vh;
+    color: white;
     background-color: var(--ds-bgfooter);
 }
 
 .container {
-    height: 43vh;
-}
-
-.card-primary-footer {
-    height: 100%;
-    border: 2px dashed black;
-}
-
-.card-secondary-footer {
-    height: 100%;
-    border: 2px dashed black;
+    padding-top: 4rem;
+    border-bottom: 1px solid #d3d3d3;
 }
 
 .last-footer {
-    height: 80%;
+    height: 80%; 
 }
 
 .logo-footer, .bottone {
     padding: 0.5rem;
 }
 
+.row-footer-1 img {
+    width: 20px;
+}
+
+select {
+    color: white;
+    background-color: var(--ds-bgfooter);
+    border: none;
+}
+
+.section-footer {
+    margin-bottom: 1rem;
+}
+
+#app-footer i {
+    margin: 0.75rem;
+}
+
+#app-footer a {
+    color: white;
+}
+
+ul {
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+#app-footer h2,
+#app-footer h4 {
+    color: var(--ds-bgbotton);
+}
+#button-footer {
+    background-color: var(--ds-bgbotton);
+}
+
+#app-footer .col-4 {
+    padding-right: 1.5rem;
+}
 /* #endregion footer */
